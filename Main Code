@@ -1,0 +1,59 @@
+#include <stdio.h>
+int main(){
+    char request[100];
+    printf("How can we help you?\n");
+    printf("Enter the number of the request you want to make.\n As explained below.\n");
+    printf("1.I want to return my order.\n");
+    printf("2.I want to use my warrenty.\n");
+    printf("3.I wann to increase my warrenty.\n");
+    printf("4.I want to talk to the customer care executive.\n");
+    printf("5.I want to submit a suggestion.\n");
+    printf("6.None of these let me type.\n");
+    fgets(request, 100, stdin);
+    
+    if (request[0] == '1')
+    {
+        printf("You want to return your order.\n");
+        printf("To do so, a few more data is needed.\n You are getting redirected to a customer care executive.\n");
+        printf("Please wait for a moment.\n");
+    }
+    else if (request[0] == '2')
+    {
+        printf("You want to use your warrenty.\n");
+        printf("To do so, a few more data is needed.\n You are getting redirected to a customer care executive.\n");
+        printf("Please wait for a moment.\n");
+    }
+    else if (request[0] == '3')
+    {
+        printf("You want to increase your warrenty.\n");
+        printf("To do so, a few more data is needed.\n You are getting redirected to a customer care executive.\n");
+        printf("Please wait for a moment.\n");
+    }
+    else if (request[0] == '4')
+    {
+        printf("You want to talk to the customer care executive.\n");
+        printf("You are getting redirected to a customer care executive.\n");
+        printf("Please wait for a moment.\n");
+    }
+    else if (request[0] == '5')
+    {
+        printf("You want to submit a suggestion.\n");
+        printf("Please enter your suggestion.\n");
+        char suggestion[100];
+        fgets(suggestion, 100, stdin);
+        printf("Thank you for your suggestion.\n");
+    }
+    else if (request[0] == '6')
+    {
+        printf("You want to type your request.\n");
+        printf("Please type your request.\n");
+        char type_request[100];
+        fgets(type_request, 100, stdin);
+        printf("Thank you for your request.\n We are taking appropriate actions to solve the issue.\n");
+    }
+    else
+    {
+        printf("Invalid request.\n");
+    }
+    return 0;
+}
